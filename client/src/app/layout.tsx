@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import DashboardWrapper from "./dashboardWrapper";
 
 const inter = localFont({
   src: '../../public/font/Inter-VariableFont_opsz,wght.ttf',
@@ -19,7 +20,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
-        {children}
+        <DashboardWrapper>{children}</DashboardWrapper>
       </body>
     </html>
   );
