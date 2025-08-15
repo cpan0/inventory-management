@@ -4,6 +4,56 @@
 
 @custom-variant dark (&:where(.dark, .dark *));
 
+@theme {
+
+}
+
+/* Dark theme overrides (shade mapping inverted) */
+.dark {
+  /* Inverted white */
+  --color-white: theme('colors.gray.950');
+
+  /* Inverted black */
+  --color-black: theme('colors.gray.50');
+
+  /* Inverted grays */
+  --color-gray-50: theme('colors.gray.900');
+  --color-gray-100: theme('colors.gray.800');
+  --color-gray-200: theme('colors.gray.700');
+  --color-gray-300: theme('colors.gray.600');
+  --color-gray-400: theme('colors.gray.500');
+  --color-gray-500: theme('colors.gray.400');
+  --color-gray-600: theme('colors.gray.300');
+  --color-gray-700: theme('colors.gray.200');
+  --color-gray-800: theme('colors.gray.100');
+  --color-gray-900: theme('colors.gray.50');
+
+  /* Inverted blues */
+  --color-blue-50: theme(colors.blue.900);
+  --color-blue-100: theme(colors.blue.800);
+  --color-blue-200: theme(colors.blue.700);
+  --color-blue-300: theme(colors.blue.600);
+  --color-blue-400: theme(colors.blue.500);
+  --color-blue-500: theme(colors.blue.400);
+  --color-blue-600: theme(colors.blue.300);
+  --color-blue-700: theme(colors.blue.200);
+  --color-blue-800: theme(colors.blue.100);
+  --color-blue-900: theme(colors.blue.50);
+
+  /* Inverted reds */
+  --color-red-50: theme('colors.red.900');
+  --color-red-100: theme('colors.red.800');
+  --color-red-200: theme('colors.red.700');
+  --color-red-300: theme('colors.red.600');
+  --color-red-400: theme('colors.red.500');
+  --color-red-500: theme('colors.red.400');
+  --color-red-600: theme('colors.red.300');
+  --color-red-700: theme('colors.red.200');
+  --color-red-800: theme('colors.red.100');
+  --color-red-900: theme('colors.red.50');
+
+}
+
 *,
 *::before,
 *::after {
